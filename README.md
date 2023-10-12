@@ -8,7 +8,7 @@ In this package the services were mapped:
 - Response
 - ServiceManager
 
-To create your own FACADE you have to inherit from the `LaminasFacade AbstractFacade` class and return the name of the service in the `getFacadeAccessor` method
+To create your own FACADE you have to inherit from the `LaminasFacade\AbstractFacade` class and return the name of the service in the `getFacadeAccessor` method
 
 ### __**This project is experimental.**__
 

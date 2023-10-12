@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LaminasFacade;
+namespace LaminasFacade\Facades;
 
 use Laminas\Mvc\Application;
 use Laminas\Stdlib\ArrayUtils;
@@ -37,9 +37,11 @@ abstract class AbstractFacade
      */
     private static function resolveFacadeInstance(): object
     {
-        $appConfig = require __DIR__ . '/../../../../config/application.config.php';
+        $appConfigDir = __DIR__ . '/../../../../../config';
+
+        $appConfig = require $appConfigDir . '/application.config.php';
         if (file_exists(__DIR__ . '/development.config.php')) {
-            $appConfig = ArrayUtils::merge($appConfig, require __DIR__ . '/../../../../config/development.config.php');
+            $appConfig = ArrayUtils::merge($appConfig, require $appConfigDir . '/development.config.php');
         }
 
         return Application::init($appConfig)->getServiceManager()->get(static::getFacadeAccessor());

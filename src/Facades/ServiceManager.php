@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LaminasFacade;
+namespace LaminasFacade\Facades;
 
 use Laminas\ServiceManager\ServiceManager as LaminasServiceManager;
 

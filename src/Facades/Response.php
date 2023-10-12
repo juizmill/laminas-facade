@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LaminasFacade;
+namespace LaminasFacade\Facades;
 
 use Laminas\Http\Header\SetCookie;
 use Laminas\Http\Response as LaminasResponse;

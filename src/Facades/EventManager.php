@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LaminasFacade;
+namespace LaminasFacade\Facades;
 
 use ArrayObject;
 use Laminas\EventManager\EventInterface;

@@ -1,0 +1,17 @@
+{
+    "name": "juizmill/laminas-facade",
+    "require": {
+        "laminas/laminas-mvc": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaminasFacade\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jesus Vieira",
+            "email": "jesusvieiradelima@gmail.com"
+        }
+    ]
+}
